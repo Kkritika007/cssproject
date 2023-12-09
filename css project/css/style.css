@@ -1,0 +1,977 @@
+
+  body{
+    font-family: 'Kalnia', serif;
+  }
+
+  /* Style for the main header */
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25em; /* Adjust padding using em */
+    background-color: #ffffff; /* Change the background color as needed */
+    box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.1); /* Adding a subtle shadow using em */
+  }
+  
+  /* Style for the logo */
+  .logo img {
+    max-width: 9.375em; /* Adjust the logo size using em */
+    margin-left: 0%;
+  }
+  
+  /* Style for the main navigation */
+  .main-nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+  
+  .main-nav ul li {
+    margin-left: 1.25em; /* Adjust spacing between navigation items using em */
+  }
+  
+  .main-nav ul li a {
+    text-decoration: none;
+    color: #333333; /* Change link color as needed */
+    font-weight: bolder;
+    transition: color 0.5s ease; /* Adding transition for smooth color change */
+  }
+  
+  /* Hover effect for navigation links */
+  .main-nav ul li a:hover {
+    color: rgb(255, 26, 141); /* Change to hot pink on hover */
+  }
+  @media screen and (max-width: 500px){
+    .logo {
+      display: inline-flex;
+      text-align: left;
+    }
+  }
+
+
+  /* CSS for the dual sections layout */
+.dual-section {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 1.125em 0.25em rgba(0, 0, 0, 0.1); /* Adding a subtle shadow using em */
+}
+
+.image-section {
+  flex: 1;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin: 0%;
+}
+
+.text-section {
+  flex: 1;
+  background-color: #d40b70d6; /* Pink background color */
+  color: #ffffff; /* White text color */
+  padding: 2em;
+  box-sizing: border-box;
+
+}
+
+.text-content {
+  text-align: center;
+}
+
+.text-content h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  margin-top: 3em;
+  letter-spacing: normal;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .dual-section {
+    flex-direction: column;
+  }
+
+  .image-section,
+  .text-section {
+    flex: 1 100%;
+    padding: 1em;
+    width: 38em;
+  }
+}
+/* Explore button styles */
+.explore-button {
+  display: inline-block;
+  padding: 0.75em 1.5em; /* Adjust padding using em */
+  margin-top: 1.25em; /* Adjust margin using em */
+  text-decoration: none;
+  color: #000000; /* Black text color */
+  background-color: #ffffff; /* White button background */
+  border-radius: 0.5em; /* Adjust border radius using em */
+  box-shadow: 0px 0.125em 0.313em rgba(0, 0, 0, 0.3); /* Shadow effect using em */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-button:hover {
+  transform: scale(1.1); /* Larger size on hover */
+  box-shadow: 0px 0.25em 0.625em rgba(0, 0, 0, 0.5); /* Increased shadow on hover */
+}
+
+.placard video {
+  pointer-events: none;
+}
+.placard video::-webkit-media-controls {
+  display: none ;
+}
+
+
+.why-choose-section,
+h3 {
+  padding: 1%;
+  padding-top: 2%;
+  text-align: center;
+  font-size: 2em;
+  color: #000000; /* Black color */
+  font-weight: bold; /* Bold font */
+  letter-spacing: normal;
+}
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 0em;
+}
+
+.placard {
+  width: 22em;
+  border-radius: 15px; /* Rounded corners */
+}
+.placard img {
+  width: 100%;
+  height: 60%;
+  border-radius: 15px 15px 0 0; /* Rounded corners only at the top */
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.placard video {
+  width: 100%;
+  height: 60%;
+  border-radius: 15px 15px 0 0; /* Rounded corners only at the top */
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.placard:hover img {
+  transform: scale(1.1);
+}
+
+.placard-text {
+  padding: 10px;
+  text-align: center;
+  background-color: #ffe0ea;
+  color: #525252;
+  border-radius: 0 0 15px 15px; /* Rounded corners only at the bottom */
+  font-family: cursive;
+  font-size: 15px;
+  font-weight: 500;
+}
+.placard-text a {
+  text-decoration: none;
+  color: #333333; /* Change link color as needed */
+  font-weight: bolder;
+  transition: color 0.5s ease; /* Adding transition for smooth color change */
+}
+
+/* Hover effect for navigation links */
+.placard-text a:hover {
+  color: rgb(255, 26, 141); /* Change to hot pink on hover */
+}
+
+
+.why-choose-content{
+  max-width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .image-container {
+    flex-direction: column; /* Change to a column layout on smaller screens */
+    align-items: center;
+    width: 35em;
+  }
+  .placard{
+    margin: 1em 0; /* Adjust margins on smaller screens */
+  }
+}
+#svg-examples{
+  padding: 2% 0%;
+  background-color: rgb(241 34 138);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+margin-top: 2em;
+}
+.btn-container-1{
+  width: 5%;
+  margin: auto;
+}
+.btn-container-1 .btn{
+  color: #f8f8f8;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 0px;
+  position: relative;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 100%;
+}
+.btn-container-1 .btn-1{
+  font-weight: 100;
+}
+ 
+.btn-container-1 .btn-1 svg{
+  height: 45px;
+  width: 200px;
+  position: absolute;
+  left: -62px;
+}
+.btn-container-1 .btn-1 rect{
+  fill: none;
+  stroke: #f8f8f8;
+  stroke-width: 2;
+  stroke-dasharray: 422,0;
+  transition: all 0.35s linear;
+}
+
+.btn-container-1 .btn-1:hover{
+  background-color: rgba(225, 51, 45, 0);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.btn-container-1 .btn-1:hover rect{
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+}
+.details{
+  color: #f8f8f8;
+  text-align: center;
+  font-size: large;
+}
+@media screen and (max-width: 600px) {
+ #svg-examples{ 
+  width: 37em;
+ }
+}
+.signup-offer {
+    position: relative;
+    background-image: url(../images/cssimg7.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 25em;
+    color: #fff;
+    padding: 1em;
+    margin-top: 5%;
+}
+
+.offer-content {
+  justify-content: space-between;
+  max-width: 50%;
+  margin-top: -1em;
+  height: 108%;
+  margin-left: 50%;
+  display: flex;
+  align-items: center;
+  padding: 0px 0px;
+  background: rgb(46 183 166);
+  background: -webkit-linear-gradient(bottom right, rgb(255 61 158), rgb(154 238 228 / 40%));
+}
+
+.offer-text {
+  max-width: 50%; /* Adjust the width of the text content */
+}
+
+.offer-text h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #f8f8f8;
+  letter-spacing: 1.5px;
+  text-shadow: 4px 2px 4px rgba(0,0,0,.5);
+}
+
+.offer-text p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #f8f8f8;
+  letter-spacing: 1.5px;
+  text-shadow: 4px 2px 4px rgba(0,0,0,.5);
+}
+/* Existing CSS styles for the signup offer section remain unchanged */
+
+/* Button style */
+.get-started-btn {
+  padding: 0.5em 1em; /* Adjust padding using em */
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border: 0.1em solid #dedede; /* Initial border color */
+  border-radius: 0.3em;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset; /* Initial box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; /* Transition for various properties */
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+/* Raised effect on hover */
+.get-started-btn:hover {
+  border-color: #fff; /* Change border color on hover */
+  transform: translateY(-0.1em); /* Move the button up slightly on hover */
+  box-shadow: 0 15px 10px -10px rgba(31, 31, 31, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset; /* Adjusted box shadow on hover */
+}
+@media screen and (max-width: 600px) {
+  .signup-offer{ 
+   width: 35em;
+  }
+ }
+ 
+ .combo-offer{
+  display: flex;
+  padding: 2em;
+  margin-top: 5%;
+ }
+ .offer-details{
+  padding: 2em;
+    text-align: center;
+    font-size: 20px;
+    margin-top: -5%;
+    margin-left: -8%;
+ }
+ .offer-image{
+  margin-right: 0%;
+  margin-left: 15%;
+width: 50%;
+height: auto;
+ }
+ /* CSS for the View Offers button */
+.view-offers-button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff4081;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.view-offers-button:hover {
+  background-color: #d81b60;
+  transform: scale(1.1); /* Scale the button to 110% on hover */
+}
+/* Hover effect for the image */
+.offer-image img {
+  width: 60%; /* Ensure the image fills its container */
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.5s ease; /* Add transform property for the hover effect */
+}
+
+.offer-image img:hover {
+  transform: scale(1.3); /* Scale the image to 110% on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .combo-offer{ 
+   width: 35em;
+  }
+ }
+
+/* ABOUT PAGE STYLING */
+.aboutpage {
+  font-family: 'Kalnia', serif;
+  font-size: 20px;
+  line-height: 24px;
+  background-color: #ffffff;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+/* WHITE CONTAINER */
+.ribbonHead {
+  max-width: 40%; /* Adjust width to make it responsive */
+  margin: 30px;
+  margin-left: 50%;
+  padding: 20px 30px 30px 50px;
+  background-color: #fff;
+}
+
+/* STYLING H1 ELEMENT */
+.ribbonHead h1 {
+  color: #fff;
+  position: relative;
+  background-color: #c90068;
+  margin: 0 -30px 20px -30px;
+  padding: 24px 0 16px 30px;
+}
+
+/* PUTTING TRIANGLE AFTER H1 ELEMENT */
+.ribbonHead h1:after {
+  content: "";
+  display: block;
+  height: 40px;
+  width: 40px;
+  background: url("") no-repeat 0 0;
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+}
+
+/* TEAMWORK IMG STYLES */
+.ribbonHead img {
+  max-width: 100%; /* Adjust image width */
+  height: auto;
+  margin: auto;
+  display: block;
+  padding: 20px;
+}
+
+/* JUSTIFYING THE TEXT */
+.ribbonHead p {
+  text-align: justify;
+  font-family: sans-serif , 'cursive';
+}
+
+/* Background Image for About Section */
+.about {
+  background-image: url(../images/cssimg8.jpg);
+  padding: 2em;
+  background-size: cover; /* Ensures image covers the container */
+  background-position: center; /* Centers the background image */
+}
+@media screen and (max-width: 600px) {
+  .about{ 
+   width: 35em;
+  }
+ }
+ .story-section {
+  padding: 2em;
+  background-color: #f9f9f9; /* Background color for the section */
+}
+
+.story-box {
+  background-color: #ffeafb;
+  padding: 2em;
+  border-radius: 8px; /* Rounded corners for the box */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.story-box h2 {
+  color: #333; /* Heading color */
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.story-box p {
+  color: #666; /* Paragraph text color */
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .story-section{ 
+   width: 35em;
+  }
+  .team-section{
+    width: 35em;
+  }
+ }
+ .team-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.team-member {
+  width: 30%; /* Adjust as needed */
+  padding: 2em;
+  margin: 1em;
+  background-color: #fff;
+  border-radius: 10%;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.team-member img {
+  width: 40%; /* Adjust as needed */
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.team-member h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.team-member p {
+  font-size: 1em;
+  color: #666;
+}
+/* Hover effect styles */
+.team-member:hover {
+  background-color: #ffeafb; /* Change background color on hover */
+  transform: scale(1.1);
+}
+
+.team-member img:hover {
+  transform: scale(1.1); /* Scale the image on hover */
+}
+
+
+.heading-with-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em; /* Adjust spacing as needed */
+}
+
+.line {
+  border: none;
+  border-top: 3px solid black;
+  width: 50px;
+  margin: 0 10px; /* Adjust the spacing between line and heading */
+  margin-top: 3%;
+}
+
+.line-left {
+  transform: rotate(180deg); /* To adjust the left line */
+}
+
+.line-right {
+  /* Adjust right line */
+  transform: rotate(0deg); /* If needed */
+}
+
+
+/* Style the heading */
+.value-section >h3 {
+  display: inline-block;
+  font-size: 24px; 
+  margin: 0; 
+  padding: 1em; 
+  vertical-align: middle;
+}
+
+.valueimage {
+  display: flex;
+  justify-content: center;
+  margin: 2em auto; 
+  max-width: 800px; 
+}
+
+/* Style for each image box */
+.value {
+  flex: 1 0 200px; /* Each box will have a minimum width of 200px and flex-grow property */
+  margin: 1em;
+  text-align: center;
+}
+
+.value img {
+  width: 45em;
+  height: 35em;
+}
+
+@media screen and (max-width: 600px) {
+  .value-section{
+    width: 37em;
+  }
+ }
+
+
+.brandsbg video {
+  pointer-events: none;
+  max-width: 100%;
+}
+.brandsbg video::-webkit-media-controls {
+  display: none ;
+}
+/* Style for the main section */
+.main {
+  position: relative;
+}
+
+/* Style for the video */
+.brandsbg video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Style for the overlaying div */
+.brandstext {
+  position: absolute;
+  top: 50em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255 233 244);
+  width: 60em;
+  height: 20em;
+  padding: 20px;
+  max-width: 80%;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.brandstext h2 {
+  font-size: 4em;
+  letter-spacing: 6.5px;
+}
+
+.brandstext p {
+  font-size: 24px;
+}
+/* Hover effect */
+.brandstext:hover {
+  background-color: rgba(255, 240, 240, 0.9); /* Lighter color */
+  transform: translate(-50%, -50%) scale(1.2); /* Slight scale effect */
+}
+
+
+.brands2 {
+  display: grid;
+  gap: 2em;
+  justify-items: center;
+  align-items: center;
+  padding: 2em;
+  margin-top: 15em;
+}
+
+.brand-logo {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+  background-color: #fff;
+  padding: 1em;
+}
+
+.brand-logo img {
+  max-width: 80%;
+  height: 90%;
+  transition: transform 0.3s ease;
+}
+
+.brand-logo:hover img {
+  transform: scale(1.1); /* Increase size on hover */
+}
+.brand-logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10em;
+}
+
+.brands2 > h3 {
+  text-align: center;
+}
+.bodybrands{
+  font-family: 'Kalnia', serif;
+  background-color: rgb(198 198 198 / 10%);
+}
+@media screen and (max-width: 600px) {
+  .brandsbg{
+    width: 37em;
+  }
+  
+ }
+ @media screen and (max-width: 900px) {
+  .brandstext{
+    position: relative;
+    width: 25em;
+    margin-top: -45em;
+    margin-bottom: 30em;
+    height: fit-content;
+  }
+  .brand-logos{
+    width: 30em;
+    grid-template-columns: auto;
+  }
+ }
+ .pink-section {
+  position: relative;
+  height: 400px; /* Adjust the height as needed */
+  background-image: url('../images/productbg.png');
+  background-size: cover;
+  background-position: center;
+  transition: filter 0.9s ease;
+}
+
+.pink-section:hover{
+  filter: grayscale(20%);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black; /* Adjust text color to your preference */
+}
+
+.text-overlay h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.searchbutton > input[type=text] {
+  width: 13em;
+  box-sizing: border-box;
+  border: 2px solid #ffffff;
+  border-radius: 5%;
+  font-size: 16px;
+  background-color: rgb(255 237 237);
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.searchbutton > input[type=text]:hover {
+  width: 100%;
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+@media screen and (max-width: 600px) {
+  .pink-section{
+    width: 37em;
+  }
+ }
+
+ .products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  /* Add background or other styles for the product section */
+}
+
+.product {
+  width: 300px; /* Adjust the width as per your layout */
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+.product:hover {
+  transform: translateY(-10px); /* Shift the product slightly upward on hover */
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  /* Add styling for product images */
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 8px 16px;
+  margin-top: -5px;
+  background-color: #ff3d7e; /* button background color */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buy-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.contact-form {
+  background-image: url('../images/nykaamakeup.jpg'); /* Replace 'background.jpg' with your image file */
+  background-color: rgba(255, 255, 255, 0.8);
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+}
+
+/* Apply a background image and  styles for the contact form section */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  background-size: cover;
+  background-position: center;
+  padding: 50px; /* Adjust padding as needed */
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px; /* Adjust spacing */
+}
+
+/* Apply styles for the form and form elements */
+.form-group {
+  margin-bottom: 20px; /* Adjust spacing between form groups */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px; /* Adjust spacing */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 50%;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #ffd4d4;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff9b9b;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff7777;
+}
+.contactme {
+  text-align: center;
+  margin-left: 25%;
+  background-color: rgb(255 160 160 / 80%);
+  border-radius: 10%;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .contact-form{
+    width: 30em;
+  }
+  footer{
+    width: 39em;
+  }
+ }
+
+ /*styling for global footer*/
+footer{
+  background-color: #de0063;
+}
+.f-item-con{
+  padding: 1.5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2rem;
+}
+footer .app-name{
+  color: white;
+  margin-left: 1.5rem;
+  line-height: 2.25rem;
+ 
+}
+.app-name .app-initial{
+  color: white;
+  font-weight: 700;
+  text-shadow: 4px 2px 4px rgba(0,0,0, .5);
+  font-size:1.9rem;
+  margin-left: 10%;
+}
+
+.app-initial > img{
+width: 5em;
+}
+footer .app-info p{
+  color: white;
+  margin-left: 1.65rem;
+}
+
+footer .footer-title{ 
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-shadow: 4px 2px 4px rgba(0,0,0, .5);
+  color: white;
+  margin-left: 1.5rem;
+  height: fit-content;
+}
+footer .links{ 
+  padding-left: 1.75rem;
+  color: white;
+  font-size: 0.875rem/* 14px */;
+  line-height: 1.25rem;
+  margin-top: .5rem;
+}
+footer .links li a{ 
+  margin: .25rem 0;
+  cursor: pointer;
+  color: #d4d4d4;
+  width: fit-content;
+}
+footer .links li:hover > a {
+  color: white;
+  
+}
+footer .help-sec{
+  grid-column-start: 2;
+}
+
+.contactform {
+  max-width: 300px;
+  margin-top: -10em;
+}
+
+.contactform form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactform label {
+  margin-bottom: 5px;
+  color:white;
+  font-family: 'Poppins';
+}
+
+.contactform input,
+.contactform textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 100%;
+}
+
+.contactform button {
+  background-color: #f9c3e2;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius:12px;
+  cursor: pointer;
+}
+
+.contactform button:hover {
+  transform: scale(1.1);
+}
+
+.contactfooter{
+  background-color: #da8686;
+}

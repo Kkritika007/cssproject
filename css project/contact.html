@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--meta data goes here -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial scale= 1.0">
+  <title>Nykaa - Home</title>
+  <!-- Linking external CSS file -->
+  <link rel="stylesheet" href="./css/style.css"> 
+   <!-- Linking external fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Julee&family=Kalnia&family=Zeyada&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header section -->
+  <header>
+    <div class="logo">
+        <img src="./images/cssimg1.png" alt="Nykaa Logo">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="brands.html">OUR Brands</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!--contact form starts from here -->
+    <section class="contact-form">
+      <h2>Contact Us</h2>
+      <form class="contactme">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password:</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+        <div class="form-group">
+          <label for="province">Province:</label>
+          <input type="text" id="province" name="province">
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob">
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+    <!-- Footer section -->
+  
+  <footer class="contactfooter">
+    <div class="f-item-con">
+        <div class="app-info">
+            <div class='app-name'>
+            <a href="index.html">
+                <span class='app-initial'> Nykaa
+                    <img src="./images/nykaalogo.png" alt="Nike Logo">
+            </span>
+        </a>
+            <p>Nykaa, where beauty meets excellence, curates premium beauty and skincare solutions for every enthusiast.</p> 
+        </div>
+        </div>
+        <div class="useful-links">
+            <div class="footer-title">Useful Links</div>
+            <ul class="links">
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Sign In</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="help-sec">
+            <div class="footer-title">Help</div>
+            <ul class="links">
+                <li><a href="contact.html">Help Me</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">Report a Issue / Bug</a></li>
+            </ul>
+        </div>
+        <div class="contactform">
+            <div class="footer-title">Contact Us</div>
+            <!-- Add your contact form here -->
+        <form action="contact.html" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="Email">Email:</label>
+                <input type="email" id="Email" name="email">
+                <label for="City">City:</label>
+                <input type="text" id="City" name="City">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        </div>
+
+        
+
+    </footer>
+</body>
+</html>
